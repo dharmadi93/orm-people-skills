@@ -12,17 +12,17 @@ module.exports = {
         isBetaMember: false
       }], {});
     */
-    return queryInterface.bulkInsert('Users', [{
-      name: 'dharmadi',
-      username: 'dharmadi93',
-      email: 'dharmadi93@gmail.com',
+    return queryInterface.bulkInsert('DetailSkills', [{
+      score: 5,
+      UserId: 16,
+      SkillId: 6,
       createdAt: new Date(),
       updatedAt: new Date()
     }])
   },
 
   down: function (queryInterface, Sequelize) {
-    return queryInterface.bulkDelete('Users',null)
+    return queryInterface.bulkDelete('DetailSkills', null)
     /*
       Add reverting commands here.
       Return a promise to correctly handle asynchronicity.

@@ -20,7 +20,7 @@ module.exports = {
   },
 
   down: function (queryInterface, Sequelize) {
-    return queryInterface.bulkDelete('Skills','name')
+    return queryInterface.bulkDelete('Skills', null)
     /*
       Add reverting commands here.
       Return a promise to correctly handle asynchronicity.
